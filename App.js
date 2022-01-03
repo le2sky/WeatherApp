@@ -25,7 +25,6 @@ export default function App() {
       `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=alerts&appid=${config.API_KEY}`
     );
     const json = await response.json();
-    console.log(json);
   };
   useEffect(() => {
     getWeather();
